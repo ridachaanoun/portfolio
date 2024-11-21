@@ -24,28 +24,10 @@
 
 html {
   font-size: 18px;
-  cursor: url(../imgs/cursor.svg) 1 1, pointer;
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
   overflow-x: hidden;
 }
-/* body {
-  overflow-x: hidden;
-  box-sizing: border-box;
-} */
-
-
-
-
-/* Hide scroll bars for WebKit-based browsers */
-/* ::-webkit-scrollbar {
-  display: none;
-} */
-
-/* Re-enable scroll bars for body in WebKit-based browsers */
-/* body::-webkit-scrollbar {
-  display: block;
-} */
 
 
 a {
@@ -59,7 +41,6 @@ a {
 /* header section  */
 header {
   background-color: #ffffff;
-  /* border-bottom: 1px solid black; */
   position: fixed;
   top: 0px;
   left: 0px;
@@ -80,7 +61,6 @@ nav {
 }
 
 nav.shrink {
-  /* background-color: transparent; */
   max-width: 1240px;
   margin: auto;
   width: 100%;
@@ -96,7 +76,6 @@ nav.shrink .cv a {
   color: white;
   padding: 3px 30px;
   font-weight: 400;
-  /* letter-spacing: 5px; */
   border-radius: 8px;
   border: 2px solid transparent;
   transition: 0.3s ease;
@@ -162,11 +141,6 @@ nav .navbar a:hover {
   cursor: url(../imgs/cursor.svg) 1 1, pointer;
 }
 
-nav .navbar a:hover:before {
-  transform: scaleX(1); /* Expand the line on hover */
-  transform-origin: bottom left;
-}
-
 nav .cv a {
   font-size: 22px;
   background-color: #000;
@@ -179,23 +153,9 @@ nav .cv a {
   transition: 0.3s ease;
   position: relative;
   isolation: isolate;
-} /*
-nav .cv a::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background-color: #fff;
-  inset: 0;
-  transform: scale(0, 1);
-  border-radius: 8px;
-  transition: 0.3s all;
+} 
 
-  transform-origin: left;
-}
-nav .cv a:hover::after,
-nav .cv a:focus:after {
-  transform: scale(1, 1);
-} */
+ 
 nav .cv a:hover {
   cursor: url(../imgs/cursor.svg) 1 1, pointer;
   background-color: transparent;
@@ -276,11 +236,8 @@ h1 .bold {
 }
 .home .typing {
   margin: 30px 0px;
-  /* text-decoration: underline; */
 }
 #typing-text {
-  /* display: inline-block; */
-  /* color: #000; */
   border-right: 2px solid #333;
   padding-right: 2px;
   animation: typing 1s steps(20) infinite;
@@ -384,19 +341,13 @@ h1 .bold {
 
 /* project */
 .projects-contain {
-  cursor: url(../imgs/cursor-white.svg) 1 1, pointer;
   margin-top: 60px;
   background-color: #000;
   position: relative;
   z-index: 3;
 }
-/* .project:hover {
-} */
+
 .project {
-  cursor: url(../imgs/cursor-white.svg) 1 1, pointer;
-
-  /* margin-top: 60px; */
-
   background-color: #000;
   color: #fff;
   padding: 60px 0px;
@@ -419,22 +370,15 @@ h1 .bold {
   font-size: 0.8rem;
   margin-left: 40px;
 }
-/* .project span.bold {
-  color: transparent;
-  font-size: 1.8rem;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgb(255, 255, 255);
-} */
+
 
 .project .row {
   margin-top: 60px;
-  /* border: #1e90ff solid 1px; */
   display: flex;
   gap: 60px;
 }
 
 .project .row > div {
-  /* border: #1e90ff solid 1px; */
   width: 50%;
 }
 .project .row .content {
@@ -446,21 +390,9 @@ h1 .bold {
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
-/* .project .row .image{
-  width: ;
-  width: 400px;
-  height: 300px;
-} */
 
-/* .project .row .image{
-  background-color: #00cccc;
-} */
 .project .row img {
   border-radius: 25px;
-
-  /* max-width: 500px;
-  max-height: 400px;
-  max-height: 300px; */
   width: 450px;
   height: 320px;
 
@@ -473,7 +405,6 @@ h1 .bold {
   color: rgb(0, 0, 0);
   padding: 5px 10px;
   font-weight: 400;
-  /* letter-spacing: 5px; */
   border-radius: 8px;
   border: 2px solid transparent;
   transition: 0.3s ease;
@@ -488,11 +419,9 @@ h1 .bold {
   padding: 5px 10px;
 }
 
-/* about  */
 
 .about {
   margin: 60px auto;
-  /* border: 1px solid black; */
   display: flex;
   gap: 40px;
 }
@@ -516,16 +445,6 @@ h1 .bold {
 .about .content p {
   line-height: 1.6rem;
 }
-/* .about div { */
-/* border: 1px solid black; */
-/* width: 50%; */
-/* } */
-
-/*  footer   */
-
-/* .contact {
-  margin-top: 60px;
-} */
 
 .contact h1 {
   font-size: 2rem;
@@ -536,7 +455,6 @@ h1 .bold {
   margin-top: 20px;
   display: flex;
   width: 100%;
-  /* padding-top: 100px; */
   gap: 1rem;
 }
 .contact .row > div {
@@ -559,7 +477,6 @@ h1 .bold {
   transition: 0.2s;
   border: rgb(0, 0, 0) 2px solid;
   outline: none;
-  /* Remove the default focus outline */
 }
 
 .contact .row form button {
@@ -576,7 +493,6 @@ h1 .bold {
   color: white;
 }
 .contact .row form button:hover {
-  cursor: url(../imgs/cursor.svg) 1 1, pointer;
 
   color: #000;
   background-color: white;
@@ -609,9 +525,6 @@ h1 .bold {
   gap: 1rem;
 }
 
-/* .contact .row .btns  {
-flex: 1;
-} */
 
 .contact .row .info {
   padding-left: 2rem;
@@ -634,12 +547,6 @@ footer {
   color: white;
 }
 
-footer:hover {
-  cursor: url(../imgs/cursor-white.svg) 1 1, pointer;
-}
-footer *:hover {
-  cursor: url(../imgs/cursor-white.svg) 1 1, pointer;
-}
 footer .logo {
   font-size: 1.2rem;
   font-weight: 400;
